@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="homeContainer">
+                <div class="homeInfo">
+                    <h3 class="teamTitle">HOME</h3>
+                    <div id="homeScoreBtns">
+                        <button onClick="addPoints(event)" class="onePoint scoreBtn">+1</button>
+                        <button onClick="addPoints(event)" class="twoPoint scoreBtn">+2</button>
+                        <button onClick="addPoints(event)" class="threePoint scoreBtn">+3</button>
+                    </div>
+                </div>
+                <div class="scoreContainer">
+                    <h2 id="homeScoreEl" class="score">0</h2>  
+                </div>
+            </div>
+            <div class="divider">
+                <p>:</p>
+            </div>
+            <div class="awayContainer">
+                <div class="scoreContainer">
+                    <h2 id="awayScoreEl" class="score">0</h2>  
+                </div>
+                <div class="awayInfo">
+                    <h3 class="teamTitle">AWAY</h3>
+                    <div id="awayScoreBtns">
+                        <button onClick="addPoints(event)" class="onePoint scoreBtn">+1</button>
+                        <button onClick="addPoints(event)" class="twoPoint scoreBtn">+2</button>
+                        <button onClick="addPoints(event)" class="threePoint scoreBtn">+3</button>
+                    </div>
+                </div>
+            </div>
+                <button class="newGameBtn" onClick="newGame()">New Game</button>   
+            <div>
+                <div class="winningElContainer"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>

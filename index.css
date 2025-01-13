@@ -1,0 +1,126 @@
+/* Mobile Styles */
+@media (min-width: 0px) {
+    body {
+        margin: 0;
+        background: #d3d3d3;
+        font-family: "poppins", monospace;
+    }
+
+    .container {
+        background: #e5eae5;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 1rem;
+        border-radius: 5rem;
+        padding: 1rem;
+    }
+
+    .homeContainer,
+    .awayContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        transition: all .3s ease;
+        height: auto;
+        gap: 3rem;
+    }
+
+    h3.teamTitle {
+        color: #222;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+        padding: .5rem;
+    }
+
+    .scoreContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #homeScoreEl {
+    flex-basis: 100%;
+    }
+
+    .homeInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .score {
+        font-family: "poppins", monospace;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 4rem;
+        line-height: 0;
+        color: #222;
+
+    }
+
+    #homeScoreBtns,
+    #awayScoreBtns {
+        display: flex;
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .scoreBtn, .newGameBtn {
+        border-radius: .5rem;
+        font-size: .8rem;
+        padding: .5rem 1rem;
+        background: #c2c8c0;
+        color: #222;
+        border: none;
+        transition: .3s ease;
+        &:hover {
+            cursor: pointer;
+            background: #a8b2a8;
+            color: #222;
+        }
+    }
+
+    .newGameBtn {
+        margin: 1.5rem;
+        display: block;
+        text-align: center;
+        flex-basis: 100%;
+        padding: .5rem;
+    }
+
+    .divider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        color: #80847f;
+    }
+
+    .winningEl {
+        font-weight: normal;
+        color: #222;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        max-width: 1024px;
+        gap: 2rem;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        max-width: 1500px;
+    }
+}
